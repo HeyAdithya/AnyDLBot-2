@@ -57,8 +57,8 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Channel ⭕️", url="https://t.me/TeleRoidGroup")], [InlineKeyboardButton(text="🛑 Support 🛑", url="https://t.me/TeleRoid14"),
-                                                    InlineKeyboardButton(text="♂️ Share", url="https://telegram.me/share/url?url=https://t.me/joinchat/t1ko_FOJxhFiOThl")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Channel ⭕️", url="https://t.me/VijayAdithyaa")], [InlineKeyboardButton(text="🛑 Support 🛑", url="https://t.me/TeleRoid14"),
+                                                    InlineKeyboardButton(text="♂️ Share", url="https://t.me/VijayAdithyaa")]]),
     )
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["upgrade"]))
@@ -88,9 +88,9 @@ async def source(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="🚸 Powered By", url="https://t.me/TeleRoidGroup") ],
-                                             [ InlineKeyboardButton(text="🌀 BotsList", url="https://t.me/joinchat/t1ko_FOJxhFiOThl"),
-                                               InlineKeyboardButton(text="💢 Source Code", url="https://github.com/PredatorHackerzZ/AnyDLBot-2") ] ] ) )
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton(text="🚸 Powered By", url="https://t.me/VijayAdithyaa") ],
+                                             [ InlineKeyboardButton(text="🌀 BotsList", url="https://t.me/VijayAdithyaa"),
+                                               InlineKeyboardButton(text="💢 Source Code", url="https://t.me/VijayAdithyaa") ] ] ) )
 
 
 @pyrogram.Client.on_message(pyrogram.filters.command(["help"]))
@@ -105,5 +105,5 @@ async def help_user(bot, update):
         parse_mode="html",
         disable_web_page_preview=True,
         reply_to_message_id=update.message_id,
-        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Join Updates Channel ⭕️", url="https://t.me/TeleRoidGroup")]]),
+        reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="⭕️ Join Updates Channel ⭕️", url="https://t.me/VijayAdithyaa")]]),
    )
