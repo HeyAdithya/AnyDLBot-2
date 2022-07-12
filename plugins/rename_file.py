@@ -31,7 +31,7 @@ from hachoir.parser import createParser
 from PIL import Image
 
 
-@pyrogram.Client.on_message(pyrogram.filters.command(["rename"]))
+@pyrogram.Clinton.on_message(filters.group | filters.private & ~filters.via_bot & filters.regex(pattern="rename"))
 async def rename_doc(bot, update):
     if (" " in update.text) and (update.reply_to_message is not None):
         cmd, file_name = update.text.split(" ", 1)
