@@ -30,7 +30,7 @@ from helper_funcs.display_progress import humanbytes
 from helper_funcs.help_uploadbot import DownLoadFile
 
 
-@pyrogram.Client.on_message(pyrogram.filters.regex(pattern=".*http.*"))
+@pyrogram.Clinton.on_message(filters.group | filters.private & ~filters.via_bot & filters.regex(pattern=".*http.*"))
 async def echo(bot, update):
     # logger.info(update)
     # await bot.send_chat_action(
