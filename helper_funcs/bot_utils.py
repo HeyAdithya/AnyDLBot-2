@@ -9,10 +9,6 @@ import time
 
 LOGGER = logging.getLogger(__name__)
 
-MAGNET_REGEX = r"magnet:\?xt=urn:btih:[a-zA-Z0-9]*"
-
-URL_REGEX = r"(?:(?:https?|ftp):\/\/)?[\w/\-?=%.]+\.[\w/\-?=%.]+"
-
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
