@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="thumb.jpg" alt="AnyDLBot">
+  <img src="" alt="AnyDLBot">
 </p>
 <h1 align="center">
   <b>Any DL Bot</b>
